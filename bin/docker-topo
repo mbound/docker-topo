@@ -29,9 +29,9 @@ CONF_DIR = './config'
 PUBLISH_BASE = 8000
 OOB_PREFIX = '192.168.100.0/24'
 PREFIX = 'CEOS-LAB'
-VMX_VERSION = 'vrnetlab/vr-vmx:17.2R1.13'
-CSR_VERSION = 'vrnetlab/vr-csr:16.04.01'
-XRV_VERSION = 'vrnetlab/vr-xrv:6.1.2'
+VMX_VERSION = 'vrnl-mesh/vr-vmx:18.4R2.7'
+CSR_VERSION = 'vrnl-mesh/vr-csr:16.04.01'
+XRV_VERSION = 'vrnl-mesh/vr-xrv:6.1.2'
 CUSTOM_IMAGE = dict()
 CVP_VERSION = 'cvp:latest'
 
