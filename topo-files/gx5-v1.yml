@@ -1,0 +1,9 @@
+VERSION: 2
+driver: veth
+links:
+    - endpoints: ["vmx-a1:eth0", "vmx-agg1:eth0","vmx-b1:eth0","vmx-agg2:eth0"]
+      driver: bridge
+    - endpoints: ["vmx-a1:eth1", "vmx-agg1:eth1","vmx-b1:eth1","vmx-agg2:eth1"]
+      driver: bridge
+
+

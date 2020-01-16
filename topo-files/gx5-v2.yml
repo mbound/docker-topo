@@ -1,0 +1,13 @@
+VERSION: 2
+
+CUSTOM_IMAGE:
+      onos: onosproject/onos
+PUBLISH_BASE:
+      8181/tcp: 8383 # expose GUI port
+#driver: veth
+links:
+    - endpoints: ["vmx-a1:eth0", "vmx-agg1:eth0","vmx-b1:eth0","vmx-agg2:eth0","onos:eth0"]
+      driver: bridge
+    - endpoints: ["vmx-a1:eth1", "vmx-agg1:eth1","vmx-b1:eth1","vmx-agg2:eth1","onos:eth1"]
+      driver: bridge
+
